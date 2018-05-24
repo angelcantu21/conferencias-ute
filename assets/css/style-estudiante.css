@@ -1,0 +1,248 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body
+{
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	background: #efefef;
+	color: #000;
+    background-image: url("../imagenes/fondos/fondo-login.jpg");
+}
+a
+{
+	text-decoration: none;
+	color: #B8711B;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+.lado-izquierdo
+{
+    padding-left: 90px;
+    padding-right: 20px;
+    display: inline-block;
+}
+.lado-izquierdo video
+{
+    height: 530px;
+    width: 680px;
+}
+.contenedor
+{
+    display: inline-block;
+	max-width: 500px;
+	width: 90%;
+	margin: auto;
+}
+.titulo
+{
+    font-size: 50px;
+	color: #000;
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+.border
+{
+	border: none;
+	margin-bottom: 5px;
+	border-top: 10px solid rgba(0, 0, 0, 0.63);
+	background: none;
+	color: none;
+}
+.formulario
+{
+	padding: 30px;
+	margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.54);
+    border-radius: 10px;
+}
+.formulario .from-group
+{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"]
+{
+	padding: 15px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	border: none;
+	vertical-align: top;
+}
+select
+{
+ 	padding: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	vertical-align: top;   
+}
+.formulario .icono
+{
+	padding: 15px;
+	text-align: center;
+	width: 48px;
+	max-height: 48px;
+	font-size: 18px;
+	line-height: 18px;
+	background: #1A8E00;
+	display: inline-block;
+	/*color: #6b6b6b;*/
+	color: #ffffff;
+	vertical-align: top;
+}
+/*.formulario .icono.izquierda
+{
+	margin-right: 4px;
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	-ms-border-radius: 3px 0 0 3px;
+	-o-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}*/
+.formulario .usuario,
+.formulario .email,
+.formulario .password,
+select
+{
+	width: 100%;
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	-ms-border-radius: 0 3px 3px 0;
+	-o-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+.formulario .password_btn
+{
+	/*width: calc(100% - 105px);*/
+}
+.formulario .error ul
+{
+	padding: 0 15px;
+}
+.formulario .error ul li
+{
+    margin-top: 10px;
+    text-align: left;
+}
+.formulario .submit-btn
+{
+	padding: 15px;
+	text-align: center;
+	width: 48px;
+	max-height: 48px;
+	font-size: 18px;
+	line-height: 18px;
+	background: #679863;
+	display: inline-block;
+	color: #fff;
+	background: #1A8E00;
+	cursor: pointer;
+
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	-ms-border-radius: 0 3px 3px 0;
+	-o-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+.texto-registrate
+{
+	text-align: center;
+	font-family: 'Roboto';
+	letter-spacing: 3px;
+}
+.texto-registrate a
+{
+	display: inline-block;
+	font-size: 16px;
+}
+.contenedor-subir
+{
+    display: none;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+.capa-negra
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    background: black;
+}
+/*FORM POSTULACION*/
+.contenedor-subir
+{
+    background: #DADADA;
+    display: inline-block;
+    width: 40%;
+    border-radius: 4px;
+    opacity: 0.9;
+    border: 1px solid rgba(0,0,0,0.9);
+    color: black;
+    padding: 20px;
+    top: 10px;
+    margin-left: 360px;
+}
+.contenedor-subir form input[type="text"], .contenedor-subir input[type="email"],
+.contenedor-subir form textarea{
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 15px;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Roboto", Arial, sans-serif, helvetica;
+  font-size: 1em;
+  color: #141938;
+}
+.contenedor-subir form input[type="text"]:focus,.contenedor-subir input[type="email"]:focus,
+.contenedor-subir form textarea:focus{
+  border: 2px solid #1A8E00;
+  padding: 16px;
+}
+.contenedor-subir form textarea{
+  max-width: 10%;
+  min-width: 100%;
+  max-height: 180px;
+  min-height: 120px;
+}
+.contenedor-subir form label
+{
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.footer-post
+{
+  position: fixed;
+}
+.contenedor-subir form input[type="submit"]
+{
+  padding: 20px;
+  width: 50%;
+  background: #000;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+}
+.contenedor-texto
+{
+  font-family: 'Raleway';
+  font-size: 30px;
+  text-align: center;
+}

@@ -1,0 +1,633 @@
+#slides {
+  position: relative;
+}
+#slides .slides-container {
+  display: none;
+}
+#slides .scrollable {
+  *zoom: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+#slides .scrollable:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slides-navigation {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+}
+.slides-navigation a {
+  position: absolute;
+  display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    background: rgba(26, 142, 0, 0.24);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    border-radius: 20%;
+}
+.slides-navigation a:hover
+{
+    background: #1A8E00;
+}
+.slides-navigation a.prev {
+  left: 0;
+}
+.slides-navigation a.next {
+  right: 0;
+}
+
+.slides-pagination {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.slides-pagination a {
+  border: 2px solid rgba(26, 142, 0, 0.5);
+  border-radius: 15px;
+  width: 10px;
+  height: 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
+  margin: 2px;
+  overflow: hidden;
+  text-indent: -100%;
+}
+.slides-pagination a.current {
+  background: #222;
+}
+/*-------------------------------------*/
+*
+{
+    margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.contenedor
+{
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    font-family: 'Roboto';
+}
+
+.contenedor .titulo
+{
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+.contenedor .slide-boton
+{
+    background: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-style: none;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.contenedor .slide-boton:hover
+{
+    background: rgba(255, 255, 255, 0.6);
+    color: #000;
+    padding: 6px 11px;
+    font-weight: bold;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+}
+/*-----------COSAS---------------*/
+.titulo-principal
+{
+  font-family: 'Raleway';
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.parrafos
+{
+  font-family: 'Roboto';
+  font-size: 25px;
+}
+footer
+{
+  bottom:0;right:0;
+  z-index:999;
+  letter-spacing:1px;
+  background-color:#f2f2f2;
+  border-top:1px solid #e4e4e4;
+  font-size:small;
+  line-height:40px;
+  padding:0 60px 0 20px;
+  border-radius: 1px;
+  text-align: center;
+}
+
+footer span
+{
+  font-family:'Roboto',cursive;
+}
+.post-menu
+{
+    font-family: 'Raleway';
+    font-size: 17px;
+}
+.post-menu .info-usuario
+{
+    padding-top: 10px;
+}
+.post-menu a
+{
+  text-decoration: underline;
+  color: #010DFF;
+  font-weight: bold;
+  font-family: 'Roboto';
+  display: block;
+  margin-top: 20px;
+  height: 0px;
+
+}
+.usuario-dentro
+{
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+}
+.titulo-detalles
+{
+  font-family: 'Raleway';
+  font-size: 40px;
+  padding-top: 30px;
+margin-bottom: 20px;
+}
+.parrafo-detalles
+{
+  font-family: 'Raleway';
+  font-size: 25px;
+  padding: 15px;
+  padding-top: 20px; 
+}
+.edificio-detalles
+{
+  font-family: 'Roboto', cursive;
+  font-size: 20px;
+  padding-top: 115px;
+}
+.fecha-detalles
+{
+  font-family: 'Roboto', cursive;
+  font-size: 20px;
+}
+.imagen-detalles
+{
+  float: left;
+  margin:10px;
+  width: 30%;
+  height: 305px;
+  border-radius: 10px;
+}
+.contenedor-detalles
+{
+  background: #FFF;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  opacity: 0.9;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+.texto-hoy
+{
+  font-size: 25px;
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
+  /*color: #00FF1B;*/
+  text-align: center;
+  cursor: progress;
+  padding-top: 50px;
+}
+.linea-borde
+{
+  background: #000;
+  height: 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+.contenedor-galeria
+{
+    margin-top: 40px;
+}
+.contenedor-galeria img
+{
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 500ms;
+    padding: 20px;
+}
+.contenedor-galeria img:hover
+{
+  transition: all 800ms;
+  border-radius: 50px;
+}
+.titulo
+{
+    font-family: 'Raleway';
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+/*--------------------MENU---------------*/
+.navegacion
+{
+    padding: 19px;
+    text-align: center;
+    font-weight: bold;
+    background: #1A8E00;
+    display: block;
+    margin: 0 0;
+    text-decoration:none;
+}
+.navegacion ul
+{
+    list-style: none;
+}
+.menu-main > li
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Raleway';
+}
+.menu-main li a
+{
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.menu-main li a:hover
+{
+    color: gray;
+}
+.fixed
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #167b00;
+}
+.submenu
+{
+    top: 58px;
+	position: absolute;
+	background: rgba(0,0,0,0.9);
+	width: 150%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 50ms;
+	text-align: left;
+    transition: all 1s;
+    padding-left: 0px;
+    z-index: 10px;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+    text-decoration: none;
+}
+.submenu li a:hover
+{
+    background: #050505;
+    list-style: none;
+}
+.menu-main li:hover .submenu
+{
+	visibility: visible;
+	opacity: 1;
+}
+/*---------------Contenedor Contacto----------*/
+.contenedor-contacto
+{
+  width: 100%;
+  background-image: url(../imagenes/contenedores/contacto-fondo.png);
+  background-size: 120%;
+  animation: movimiento 15s infinite linear alternate;
+}
+@keyframes movimiento
+{
+  from{background-position:  bottom left;}
+  to{background-position:  top right;}
+}
+.contenedor-contacto button
+{
+  padding: 10px 20px;
+  background: black;
+  font-size: 15px;
+  border-style: none;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background 300ms;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contenedor-contacto button:hover
+{
+  background: gray;
+}
+form input[type="text"],input[type="email"],
+form textarea{
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 15px;
+  width: 25%;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Roboto", Arial, sans-serif, helvetica;
+  font-size: 1em;
+  color: #141938;
+}
+form input[type="text"]:focus,input[type="email"]:focus,
+form textarea:focus{
+  border: 2px solid #1A8E00;
+  padding: 16px;
+}
+form textarea{
+  max-width: 10%;
+  min-width: 25%;
+  max-height: 180px;
+  min-height: 120px;
+}
+form label
+{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+}
+/*----------------Contenedor Acerca-----------------------*/
+.contenedor-acerca
+{
+  letter-spacing: 3px;
+}
+.contenedor-acerca p 
+{
+  padding: 30px;
+}
+.contenedor-acerca button
+{
+  padding: 10px 20px;
+  background: none;
+  font-size: 15px;
+  border-style: none;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background 300ms;
+}
+.contenedor-acerca button:hover
+{
+  background: gray;
+}
+/*--------------------------------------------------------------*/
+/*----------------Contenedor Inicio-----------------------*/
+.contenedor-inicio
+{
+  letter-spacing: 3px;
+}
+.contenedor-inicio p 
+{
+  padding: 30px;
+}
+/*--------------------------------------------------------------*/
+/*----------------IMAGEN-----------------*/
+.content-all{
+    display: inline-block;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.content-img{
+    width: 600px;
+    height: 320px;
+    margin: auto;
+    margin-top: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.content-img img{
+    width: 100%;
+    transition: all 800ms;
+    border-radius: 12px;
+}
+
+.content-1{
+    width: 1200px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transform: rotate(60deg);
+    margin-left: -885px;
+    transition: all 1s;
+}
+
+
+.content-img:hover .content-1{
+    width: 320%;
+    transition: all 1500ms;
+}
+
+
+.content-img:hover img{
+    transform: scale(1.6);
+    transition: all 500ms;
+    opacity: 0.9;
+}
+
+.content-txt{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    padding: 5px;
+    z-index: 5;/*Sobre poner texto frente al contenedor*/
+    color: white;
+    text-align: center;
+    font-family: 'Mina', sans-serif;
+}
+
+.content-txt h2{
+    font-size: 30px;
+    opacity: 0;
+    transition: all 500ms;
+    margin-top: 30px;
+}
+
+.content-txt p{
+    font-size: 19px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 300ms;
+}
+.content-txt button
+{
+  padding: 5px 15px;
+  background: none;
+  font-size: 15px;
+  border-style: none;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background 300ms;
+  color: white;
+  opacity: 0;
+  font-family: 'Raleway';
+}
+.content-txt button:hover
+{
+  background: white;
+  color: black;
+  transition: background 300ms;
+}
+.content-img:hover h2{
+    opacity: 1;
+    transition: all 300ms;
+    transform: scale(1);
+}
+
+.content-img:hover p{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 500ms;
+}
+.content-img:hover button
+{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 500ms;
+}
+/*--------------IMAGEN------------------------*/
+
+/*--------------------POSTULACIONES--------------------*/
+.contenedor-postulacion
+{
+  background: #DADADA;
+  display: inline-block;
+  width: 40%;
+  border-radius: 4px;
+  opacity: 0.9;
+  border: 1px solid rgba(0,0,0,0.9);
+  color: black;
+  padding: 10px;
+}
+.contenedor-postulacion form input[type="text"], .contenedor-postulacion input[type="email"],
+.contenedor-postulacion form textarea{
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 15px;
+  width: 90%;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Roboto", Arial, sans-serif, helvetica;
+  font-size: 1em;
+  color: #141938;
+}
+.contenedor-postulacion form input[type="text"]:focus,.contenedor-postulacion input[type="email"]:focus,
+.contenedor-postulacion form textarea:focus{
+  border: 2px solid #1A8E00;
+  padding: 16px;
+}
+.contenedor-postulacion form textarea{
+  max-width: 10%;
+  min-width: 90%;
+  max-height: 180px;
+  min-height: 120px;
+}
+.contenedor-postulacion form label
+{
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 5px;
+}
+.footer-post
+{
+  position: fixed;
+}
+.contenedor-postulacion form input[type="submit"]
+{
+  padding: 20px;
+  width: 50%;
+  background: #000;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+}
+.contenedor-texto
+{
+  font-family: 'Raleway';
+  font-size: 30px;
+  text-align: center;
+}
+/*---------------------------------------------------*/
+/*-----------------TABLA DE MIS EVENTOS--------------*/
+.cabecera
+{
+	/*background: #1A8E00;*/
+	background: black;
+}
+.columnas
+{
+	background: #fff;
+}
+.acciones
+{
+	/*background: #1A8E00;*/
+	background: black;
+}
+td a
+{
+	color: white;
+}
+td a:hover
+{
+	font-size: 13px;
+	color: gray;
+}
+.titulo-col
+{
+	font-weight: bold;
+    color: white;
+}
+/*-----------------INFORMACION DE ALUMNOS--------------*/
+.imagen-alumno
+{
+    cursor: pointer;
+}

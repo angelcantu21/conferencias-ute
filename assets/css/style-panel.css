@@ -1,0 +1,273 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body
+{
+    background: #efefef;
+    color: black;
+    font-family: 'Roboto';
+}
+h1
+{
+    font-family: 'Raleway';
+}
+.titulo
+{
+    background: #D0D0D0;
+    margin: 0 0;
+	width: 100%;
+	height: 110px;
+	position:relative;
+	padding:5px;
+    display: block;
+	box-shadow:0px 0px 20px #D0D0D0;
+	overflow: hidden;
+}
+.titulo img
+{
+    margin-bottom: 40px;
+}
+.titulo a{
+    display: inline-block;    
+}
+a
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+.menu
+{
+    font-family: 'Raleway';
+    background: #000;
+    color: white;
+    text-align: center;
+	text-decoration:none;
+	font-weight: bold;
+}
+.menu ul
+{
+    list-style: none;
+}
+.menu-main > li
+{
+	position: relative;
+	display: inline-block;
+    padding: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.menu-main li a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+
+}
+.menu-main li a:hover
+{
+	color: gray;
+}
+/*.submenu
+{
+	top: 39.5px;
+    position: absolute;
+	border-radius: 1px;
+	visibility: hidden;
+	text-align: left;
+    color: #fff;
+    background: black;
+    opacity: 0;
+    width: 110%;
+    transition: opacity 700ms;
+    padding-left: 0px;
+}
+.submenu li a{
+	display: block;
+	padding: 10px;
+	color: white;
+}
+.submenu li a:hover
+{
+	background: white;
+	list-style: none;
+}
+.menu-main li:hover .submenu
+{
+	visibility: visible;
+    opacity: 1;
+}*/
+.border
+{
+	border: none;
+	border-top: 3px solid black;
+}
+form
+{
+	width: 50%;
+	height: 100%;
+	margin: 20px 0;
+	padding:  20px;
+	background: black;
+	overflow: hidden;
+	box-shadow: 0 0 3px white;
+    margin-left: 350px;
+    color: white;
+}
+form input[type="text"],input[type="date"],
+form textarea{
+	border: 1px solid #536DFE;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	font-family: "Roboto", Arial, sans-serif, helvetica;
+	font-size: 1em;
+	color: #141938;
+}
+form input[type="time"],input[type="time"]
+{
+    font-family: "Roboto", Arial, sans-serif, helvetica;
+	font-size: 1em;
+	color: #141938;
+}
+form select
+{
+    border: 1px solid #536DFE;
+	border-radius: 2px;
+	padding: 10px;
+	width: 50%;
+	display: block;
+	margin-bottom: 20px;
+	font-family: "Roboto", Arial, sans-serif, helvetica;
+	font-size: 1em;
+	color: #141938;
+}
+form select:focus
+{
+    transition: all 700ms;
+    border: 2px solid #3F51B5;
+}
+form input[type="text"]:focus,input[type="datetime-local"]:focus,
+form textarea:focus{
+	border: 2px solid #3F51B5;
+	padding: 15px;
+}
+form textarea{
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 200px;
+	min-height: 150px;
+}
+form input[type="submit"]{
+	padding:15px;
+	background: #fff;
+	color: #000;
+	font-size: 1em;
+	font-family: "Roboto", Arial, sans-serif, helvetica;
+	border-radius: 2px;
+	border: none;
+	float: right;
+	cursor: pointer;
+}
+form input[type="submit"]:hover
+{
+    background: gray;
+	color: #000;
+}
+.cabecera
+{
+	/*background: #1A8E00;*/
+	background: black;
+}
+.columnas
+{
+	background: #fff;
+    color: black;
+}
+.acciones
+{
+	/*background: #1A8E00;*/
+	background: white;
+}
+td a
+{
+	color: white;
+}
+th a
+{
+    text-decoration: underline;
+    color: white;
+}
+td a:hover
+{
+	color: #000;
+}
+.titulo-col
+{
+	font-weight: bold;
+}
+.panel-texto
+{
+	font-weight: bold;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 70px;
+	text-align: center;
+}
+.enlace-titulo
+{
+	color: black;
+	cursor: pointer;
+}
+.contenedor-subir
+{
+    display: none;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    transition: all 600ms;
+}
+.contenedor-modificar
+{
+    position: absolute;
+    width: 100%;
+    top: 200px;
+}
+.agregar-elemento
+{
+    background: #303030;
+}
+.boton_eliminar
+{
+    border: none;
+    background: #FF0000;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.boton_actualizar
+{
+    border: none;
+    background: #FF5D00;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.capa-negra
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    background: black;
+}
